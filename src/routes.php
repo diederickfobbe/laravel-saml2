@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
 Route::middleware(config('saml2_settings.routesMiddleware'))
 ->prefix(config('saml2_settings.routesPrefix').'/')->group(function() {
     Route::prefix('{idpName}')->group(function() {
